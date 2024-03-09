@@ -1,0 +1,11 @@
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\bin\Debug\net8.0\SolarLabCourseTask.AppServices.deps.json
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\bin\Debug\net8.0\SolarLabCourseTask.AppServices.dll
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\bin\Debug\net8.0\SolarLabCourseTask.AppServices.pdb
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.AssemblyInfoInputs.cache
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.AssemblyInfo.cs
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.csproj.CoreCompileInputs.cache
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.dll
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\refint\SolarLabCourseTask.AppServices.dll
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.pdb
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\ref\SolarLabCourseTask.AppServices.dll
