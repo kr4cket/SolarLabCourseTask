@@ -1,6 +1,8 @@
-﻿namespace SolarLabCourseTask.DataAccess.User.Repository;
+﻿using SolarLabCourseTask.AppServices.Users.Repositories;
 
-public class UserRepository
+namespace SolarLabCourseTask.DataAccess.User.Repository;
+
+public class UserRepository : IUserRepository
 {
     
 }

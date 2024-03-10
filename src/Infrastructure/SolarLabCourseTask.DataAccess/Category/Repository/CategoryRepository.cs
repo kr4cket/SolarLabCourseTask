@@ -1,6 +1,8 @@
-﻿namespace SolarLabCourseTask.DataAccess.Category.Repository;
+﻿using SolarLabCourseTask.AppServices.Category.Repositories;
 
-public class CategoryRepository
+namespace SolarLabCourseTask.DataAccess.Category.Repository;
+
+public class CategoryRepository : ICategoryRepository
 {
     
 }
