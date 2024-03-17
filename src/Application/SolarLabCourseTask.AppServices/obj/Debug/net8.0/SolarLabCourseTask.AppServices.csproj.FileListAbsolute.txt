@@ -9,3 +9,8 @@ C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTas
 C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\refint\SolarLabCourseTask.AppServices.dll
 C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.pdb
 C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\ref\SolarLabCourseTask.AppServices.dll
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\bin\Debug\net8.0\SolarLabCourseTask.Contracts.dll
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\bin\Debug\net8.0\SolarLabCourseTask.Contracts.pdb
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.csproj.AssemblyReference.cache
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.sourcelink.json
+C:\Users\kores\source\repos\SolarLabCourseTask\src\Application\SolarLabCourseTask.AppServices\obj\Debug\net8.0\SolarLabCourseTask.AppServices.csproj.CopyComplete

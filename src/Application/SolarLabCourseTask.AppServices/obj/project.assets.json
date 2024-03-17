@@ -263,6 +263,20 @@
             "related": ".xml"
           }
         }
+      },
+      "SolarLabCourseTask.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.2.24128.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.0-preview.1"
+        },
+        "compile": {
+          "bin/placeholder/SolarLabCourseTask.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SolarLabCourseTask.Contracts.dll": {}
+        }
       }
     }
   },
@@ -681,12 +695,18 @@
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
       ]
+    },
+    "SolarLabCourseTask.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../Contracts/SolarLabCourseTask.Contracts/SolarLabCourseTask.Contracts.csproj",
+      "msbuildProject": "../../Contracts/SolarLabCourseTask.Contracts/SolarLabCourseTask.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.0-preview.2.24128.4",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.0-preview.1"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.0-preview.1",
+      "SolarLabCourseTask.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -720,7 +740,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj": {
+              "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -269,13 +269,56 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0-preview.2.24128.4",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.0-preview.1"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.0-preview.1",
+          "SolarLabCourseTask.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/SolarLabCourseTask.AppServices.dll": {}
         },
         "runtime": {
           "bin/placeholder/SolarLabCourseTask.AppServices.dll": {}
+        }
+      },
+      "SolarLabCourseTask.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.2.24128.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.0-preview.1"
+        },
+        "compile": {
+          "bin/placeholder/SolarLabCourseTask.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SolarLabCourseTask.Contracts.dll": {}
+        }
+      },
+      "SolarLabCourseTask.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.2.24128.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.0-preview.1"
+        },
+        "compile": {
+          "bin/placeholder/SolarLabCourseTask.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SolarLabCourseTask.Domain.dll": {}
+        }
+      },
+      "SolarLabCourseTask.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.2.24128.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.0-preview.1"
+        },
+        "compile": {
+          "bin/placeholder/SolarLabCourseTask.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SolarLabCourseTask.Infrastructure.dll": {}
         }
       }
     }
@@ -700,13 +743,30 @@
       "type": "project",
       "path": "../../Application/SolarLabCourseTask.AppServices/SolarLabCourseTask.AppServices.csproj",
       "msbuildProject": "../../Application/SolarLabCourseTask.AppServices/SolarLabCourseTask.AppServices.csproj"
+    },
+    "SolarLabCourseTask.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../Contracts/SolarLabCourseTask.Contracts/SolarLabCourseTask.Contracts.csproj",
+      "msbuildProject": "../../Contracts/SolarLabCourseTask.Contracts/SolarLabCourseTask.Contracts.csproj"
+    },
+    "SolarLabCourseTask.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Domain/SolarLabCourseTask.Domain/SolarLabCourseTask.Domain.csproj",
+      "msbuildProject": "../../Domain/SolarLabCourseTask.Domain/SolarLabCourseTask.Domain.csproj"
+    },
+    "SolarLabCourseTask.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../SolarLabCourseTask.Infrastructure/SolarLabCourseTask.Infrastructure.csproj",
+      "msbuildProject": "../SolarLabCourseTask.Infrastructure/SolarLabCourseTask.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.0-preview.2.24128.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.0-preview.1",
-      "SolarLabCourseTask.AppServices >= 1.0.0"
+      "SolarLabCourseTask.AppServices >= 1.0.0",
+      "SolarLabCourseTask.Domain >= 1.0.0",
+      "SolarLabCourseTask.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -743,6 +803,12 @@
           "projectReferences": {
             "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj": {
               "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj"
+            },
+            "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\SolarLabCourseTask.Domain.csproj": {
+              "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\SolarLabCourseTask.Domain.csproj"
+            },
+            "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj"
             }
           }
         }

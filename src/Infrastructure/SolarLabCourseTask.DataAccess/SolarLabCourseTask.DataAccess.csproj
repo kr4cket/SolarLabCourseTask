@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Application\SolarLabCourseTask.AppServices\SolarLabCourseTask.AppServices.csproj" />
+    <ProjectReference Include="..\..\Domain\SolarLabCourseTask.Domain\SolarLabCourseTask.Domain.csproj" />
+    <ProjectReference Include="..\SolarLabCourseTask.Infrastructure\SolarLabCourseTask.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
