@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarLabCourseTask.ComponentRegistrator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ec1b403d3f0490fc4902495c15e9bc066cda688")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9562659d6a5f2b4b8c180a6f965aeb9a93c0c516")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarLabCourseTask.ComponentRegistrator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarLabCourseTask.ComponentRegistrator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
