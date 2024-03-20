@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q1rXFC7xJU9TI1++U97qut+eW3kX83UxWS7SLwYUXiBqO3qwlEtDfaIYW5Il3HepToE1Hj0J3zCW5J7M+jVNow==",
+  "dgSpecHash": "vf11aC6MpNpAbomZ7EjSRmHMLna54dzo8//TRFHNyYsfMp9HU4+3SDVtzjVkDvd5lwrKSPVLQ/Jxgq3mDSO2zw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrator\\SolarLabCourseTask.ComponentRegistrator.csproj",
+  "projectFilePath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrar\\SolarLabCourseTask.ComponentRegistrar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kores\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.9.0.0-preview.2.24128.4.nupkg.sha512",
     "C:\\Users\\kores\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.abstractions.9.0.0-preview.2.24128.4.nupkg.sha512",

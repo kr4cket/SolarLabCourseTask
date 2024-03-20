@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarLabCourseTask.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb05b31d1c3e53af0768813f5e6abdbdfc1c1fe9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c207aee631713f34a37519bbd8f668cd894f82d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarLabCourseTask.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarLabCourseTask.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

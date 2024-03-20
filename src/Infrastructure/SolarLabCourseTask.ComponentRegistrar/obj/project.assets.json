@@ -696,11 +696,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrator\\SolarLabCourseTask.ComponentRegistrator.csproj",
-      "projectName": "SolarLabCourseTask.ComponentRegistrator",
-      "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrator\\SolarLabCourseTask.ComponentRegistrator.csproj",
+      "projectUniqueName": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrar\\SolarLabCourseTask.ComponentRegistrar.csproj",
+      "projectName": "SolarLabCourseTask.ComponentRegistrar",
+      "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrar\\SolarLabCourseTask.ComponentRegistrar.csproj",
       "packagesPath": "C:\\Users\\kores\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrator\\obj\\",
+      "outputPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.ComponentRegistrar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Studio Community\\VS Community Common\\NuGetPackages"

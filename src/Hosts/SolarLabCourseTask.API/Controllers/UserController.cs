@@ -6,7 +6,7 @@ using SolarLabCourseTask.Contracts.Users;
 namespace SolarLabCourseTask.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/users")]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -26,7 +26,6 @@ namespace SolarLabCourseTask.API.Controllers
         /// <param name="cancellationToken">Токен отмены операции.</param>
         /// <returns>Список пользователей.</returns>
         [HttpGet]
-        [Route("all")]
         [ProducesResponseType(typeof(IEnumerable<UserDTO>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
@@ -40,29 +39,33 @@ namespace SolarLabCourseTask.API.Controllers
         /// <summary>
         /// Возвращает пользователя.
         /// </summary>
+        /// <param name="id">Идентификатор пользователя.</param>
         /// <param name="cancellationToken">Токен отмены операции.</param>
         /// <returns>Пользователь.</returns>
         [HttpGet]
+        [Route("/users/{id}")]
         [ProducesResponseType(typeof(UserDTO), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> GetUser(CancellationToken cancellationToken)
+        public async Task<IActionResult> GetUser(string id, CancellationToken cancellationToken)
         {
             return Ok();
         }
-        
+
         /// <summary>
         /// Удаляет пользователя.
         /// </summary>
+        /// <param name="id">Идентификатор пользователя.</param>
         /// <param name="cancellationToken">Токен отмены операции.</param>
         /// <returns>Пользователь.</returns>
         [HttpDelete]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [Route("/users/{id}")]
+        [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> DeleteUser(CancellationToken cancellationToken)
+        public async Task<IActionResult> DeleteUser(string id, CancellationToken cancellationToken)
         {
-            return Ok();
+            return NoContent();
         }
         
         /// <summary>
@@ -70,22 +73,24 @@ namespace SolarLabCourseTask.API.Controllers
         /// </summary>
         /// <param name="cancellationToken">Токен отмены операции.</param>
         [HttpPost]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> CreateUser(CancellationToken cancellationToken)
         {
-            return Ok();
+            return Created();
         }
-        
+
         /// <summary>
         /// Обновляет данные пользоватея.
         /// </summary>
+        /// <param name="id">Идентификатор пользователя.</param>
         /// <param name="cancellationToken">Токен отмены операции.</param>
         [HttpPut]
+        [Route("/users/{id}")]
         [ProducesResponseType(typeof(UserDTO), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> UpdateUser(CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateUser(string id, CancellationToken cancellationToken)
         {
             return Ok();
         }

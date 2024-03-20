@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo { Title = "Мой первый API", Version = "V1" });
+    options.SwaggerDoc("v1", new OpenApiInfo { Title = "SolarLabTask", Version = "V1" });
 });
 
 var app = builder.Build();

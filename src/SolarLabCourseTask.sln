@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLabCourseTask.Domain",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLabCourseTask.API", "Hosts\SolarLabCourseTask.API\SolarLabCourseTask.API.csproj", "{9AE3B2A5-9263-4672-B54C-3D504DBD26D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLabCourseTask.ComponentRegistrator", "Infrastructure\SolarLabCourseTask.ComponentRegistrator\SolarLabCourseTask.ComponentRegistrator.csproj", "{AC16EC79-17DB-4959-91C4-614E1DFD69E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLabCourseTask.ComponentRegistrar", "Infrastructure\SolarLabCourseTask.ComponentRegistrar\SolarLabCourseTask.ComponentRegistrar.csproj", "{AC16EC79-17DB-4959-91C4-614E1DFD69E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLabCourseTask.DataAccess", "Infrastructure\SolarLabCourseTask.DataAccess\SolarLabCourseTask.DataAccess.csproj", "{BCEB5872-D7CC-4728-87FC-13D62B4F80AE}"
 EndProject
