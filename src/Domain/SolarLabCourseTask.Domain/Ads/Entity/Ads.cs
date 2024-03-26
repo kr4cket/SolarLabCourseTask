@@ -22,8 +22,7 @@ public class Ads : BaseEntity
     public Guid UserId { get; set; }
     
     /// <summary>
-    /// Идентификатор категории.
+    /// Дата создания пользователя.
     /// </summary>
-    public Guid CategoryId { get; set; }
-    
+    public DateTime CreatedAt { get; set; }
 }

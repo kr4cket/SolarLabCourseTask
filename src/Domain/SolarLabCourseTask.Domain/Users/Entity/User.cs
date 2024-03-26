@@ -32,7 +32,7 @@ public class User : BaseEntity
     public string Phone { get; set; }
     
     /// <summary>
-    /// Является ли пользователь администратором.
+    /// Роль пользователя для авторизации.
     /// </summary>
-    public bool IsAdmin { get; set; }
+    public int Role { get; set; }
 }

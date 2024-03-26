@@ -36,7 +36,7 @@ public class UserDTO
     public string Phone { get; set; }
     
     /// <summary>
-    /// Является ли пользователь администратором.
+    /// Роль пользователя в системе.
     /// </summary>
-    public bool IsAdmin { get; set; }
+    public int Role { get; set; }
 }

@@ -19,7 +19,7 @@ public class UserRepository : IUserRepository
             LastName = u.LastName,
             Email = u.Email,
             Phone = u.Phone,
-            IsAdmin = u.IsAdmin,
+            Role = u.Role,
         }), cancellationToken);
     }
 }
