@@ -26,7 +26,7 @@ namespace SolarLabCourseTask.API.Controllers
         /// <param name="cancellationToken">Токен отмены операции.</param>
         /// <returns>Список объявлений.</returns>
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<AdDTO>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<AdDto>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetAds(CancellationToken cancellationToken)
@@ -42,7 +42,7 @@ namespace SolarLabCourseTask.API.Controllers
         /// <returns>Объявление.</returns>
         [HttpGet]
         [Route("/ads/{id}")]
-        [ProducesResponseType(typeof(AdDTO), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(AdDto), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetAd(string id, CancellationToken cancellationToken)
@@ -85,7 +85,7 @@ namespace SolarLabCourseTask.API.Controllers
         /// <param name="cancellationToken">Токен отмены операции.</param>
         [HttpPut]
         [Route("/ads/{id}")]
-        [ProducesResponseType(typeof(AdDTO), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(AdDto), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> UpdateAd(string id, CancellationToken cancellationToken)

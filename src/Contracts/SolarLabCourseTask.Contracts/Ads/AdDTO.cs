@@ -3,7 +3,7 @@
 /// <summary>
 /// Объявление.
 /// </summary>
-public class AdDTO
+public class AdDto
 {
     
 }

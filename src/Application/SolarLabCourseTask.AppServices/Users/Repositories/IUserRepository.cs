@@ -4,5 +4,5 @@ namespace SolarLabCourseTask.AppServices.Users.Repositories;
 
 public interface IUserRepository
 {
-    Task<IEnumerable<UserDTO>> GetAll(CancellationToken cancellationToken);
+    Task<IEnumerable<UserDto>> GetAll(CancellationToken cancellationToken);
 }

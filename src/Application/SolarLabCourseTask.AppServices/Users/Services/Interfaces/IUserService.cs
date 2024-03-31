@@ -10,6 +10,6 @@ public interface IUserService
     /// <summary>
     /// Возвращает всех пользователей.
     /// </summary>
-    /// <returns>Список пользователей <see cref="UserDTO"/>.</returns>
-    Task<IEnumerable<UserDTO>> GetUsersAsync(CancellationToken cancellationToken);
+    /// <returns>Список пользователей <see cref="UserDto"/>.</returns>
+    Task<IEnumerable<UserDto>> GetUsersAsync(CancellationToken cancellationToken);
 }

@@ -3,7 +3,7 @@
 /// <summary>
 /// Пользователь.
 /// </summary>
-public class UserDTO
+public class UserDto
 {
     /// <summary>
     /// Идентификатор записи.

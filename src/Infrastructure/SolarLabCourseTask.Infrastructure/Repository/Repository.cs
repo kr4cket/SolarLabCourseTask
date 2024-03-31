@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace SolarLabCourseTask.Infrastructure.Repository;
 
-public class ReadingRepository<TEntity> : IRepository<TEntity> where TEntity: class
+public class Repository<TEntity> : IRepository<TEntity> where TEntity: class
 {
     protected DbContext DbContext { get; }
     protected DbSet<TEntity> DbSet { get; }
 
-    public ReadingRepository(DbContext context)
+    public Repository(DbContext context)
     {
         DbContext = context;
         DbSet = DbContext.Set<TEntity>();

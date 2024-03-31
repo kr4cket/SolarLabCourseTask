@@ -3,7 +3,7 @@
 /// <summary>
 /// Категория.
 /// </summary>
-public class CategoryDTO
+public class CategoryDto
 {
     
 }

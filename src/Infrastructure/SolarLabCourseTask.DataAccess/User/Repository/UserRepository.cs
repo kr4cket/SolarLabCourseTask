@@ -8,11 +8,11 @@ namespace SolarLabCourseTask.DataAccess.User.Repository;
 public class UserRepository : IUserRepository
 {
     private readonly IRepository<Domain.Users.Entity.User> _repository;
-    public async Task<IEnumerable<UserDTO>> GetAll(CancellationToken cancellationToken)
+    public async Task<IEnumerable<UserDto>> GetAll(CancellationToken cancellationToken)
     {
         var users = await _repository.GetAll().ToListAsync(cancellationToken);
         
-        return await Task.Run(()=>users.Select(u => new UserDTO
+        return await Task.Run(()=>users.Select(u => new UserDto
         {
             Id = u.Id,
             FirstName = u.FirstName,

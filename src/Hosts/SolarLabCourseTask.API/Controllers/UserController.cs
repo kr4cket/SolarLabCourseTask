@@ -26,7 +26,7 @@ namespace SolarLabCourseTask.API.Controllers
         /// <param name="cancellationToken">Токен отмены операции.</param>
         /// <returns>Список пользователей.</returns>
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<UserDTO>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<UserDto>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetAllUsers(CancellationToken cancellationToken)
@@ -44,7 +44,7 @@ namespace SolarLabCourseTask.API.Controllers
         /// <returns>Пользователь.</returns>
         [HttpGet]
         [Route("/users/{id}")]
-        [ProducesResponseType(typeof(UserDTO), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(UserDto), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetUser(string id, CancellationToken cancellationToken)
@@ -87,7 +87,7 @@ namespace SolarLabCourseTask.API.Controllers
         /// <param name="cancellationToken">Токен отмены операции.</param>
         [HttpPut]
         [Route("/users/{id}")]
-        [ProducesResponseType(typeof(UserDTO), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(UserDto), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> UpdateUser(string id, CancellationToken cancellationToken)
