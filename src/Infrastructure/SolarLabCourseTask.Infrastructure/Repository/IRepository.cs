@@ -29,7 +29,8 @@ public interface IRepository<TEntity> where TEntity: class
     /// Создает элемент сущности
     /// </summary>
     /// <param name="model">Сущность</param>
-    ValueTask<EntityEntry<TEntity>> AddAsync(TEntity model);
+    /// <param name="cancellationToken">Токен</param>
+    ValueTask<EntityEntry<TEntity>> AddAsync(TEntity model, CancellationToken cancellationToken);
 
     /// <summary>
     /// Обновляет элемент сущности

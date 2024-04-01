@@ -67,16 +67,18 @@ namespace SolarLabCourseTask.API.Controllers
         {
             return NoContent();
         }
-        
+
         /// <summary>
         /// Создает пользователя.
         /// </summary>
+        /// <param name="model">Данные пользователя</param>
         /// <param name="cancellationToken">Токен отмены операции.</param>
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> CreateUser(CancellationToken cancellationToken)
+        public async Task<IActionResult> CreateUser(CreateUserRequest model, CancellationToken cancellationToken)
         {
+            var uri = await _userService.AddAsync(model, cancellationToken);
             return Created();
         }
 

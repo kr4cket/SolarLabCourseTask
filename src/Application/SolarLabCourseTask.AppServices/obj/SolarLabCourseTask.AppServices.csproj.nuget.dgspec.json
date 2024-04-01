@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj": {}
+    "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj": {
+    "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj",
         "projectName": "SolarLabCourseTask.AppServices",
-        "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj",
-        "packagesPath": "C:\\Users\\kores\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\obj\\",
+        "projectPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\SolarLabCourseTask.AppServices.csproj",
+        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Application\\SolarLabCourseTask.AppServices\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Visual Studio Community\\VS Community Common\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kores\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj": {
-                "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj"
+              "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj"
+              },
+              "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\SolarLabCourseTask.Domain.csproj": {
+                "projectPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\SolarLabCourseTask.Domain.csproj"
               }
             }
           }
@@ -48,6 +47,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0-preview.2.24128.4, )"
@@ -66,7 +73,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.0-preview.1, )"
+              "version": "[9.0.0-preview.2, )"
             }
           },
           "imports": [
@@ -85,25 +92,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj": {
+    "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj",
         "projectName": "SolarLabCourseTask.Contracts",
-        "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj",
-        "packagesPath": "C:\\Users\\kores\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\obj\\",
+        "projectPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\SolarLabCourseTask.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Contracts\\SolarLabCourseTask.Contracts\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Visual Studio Community\\VS Community Common\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kores\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -129,6 +132,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0-preview.2.24128.4, )"
@@ -147,7 +158,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.0-preview.1, )"
+              "version": "[9.0.0-preview.2, )"
             }
           },
           "imports": [
@@ -166,7 +177,92 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\SolarLabCourseTask.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\SolarLabCourseTask.Domain.csproj",
+        "projectName": "SolarLabCourseTask.Domain",
+        "projectPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\SolarLabCourseTask.Domain.csproj",
+        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Domain\\SolarLabCourseTask.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.2.24128.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-preview.2.24128.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-preview.2.24128.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.0-preview.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

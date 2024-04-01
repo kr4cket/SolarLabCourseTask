@@ -22,4 +22,19 @@ public class UserRepository : IUserRepository
             Role = u.Role,
         }), cancellationToken);
     }
+
+    public async Task AddAsync(Domain.Users.Entity.User entity, CancellationToken cancellationToken)
+    {
+        await _repository.AddAsync(entity, cancellationToken);
+    }
+
+    public Task<Guid> UpdateAsync(UserDto user, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task DeleteAsync(Guid id, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
 }

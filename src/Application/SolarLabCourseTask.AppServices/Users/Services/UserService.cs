@@ -1,6 +1,8 @@
 ﻿using SolarLabCourseTask.AppServices.Users.Repositories;
 using SolarLabCourseTask.AppServices.Users.Services.Interfaces;
 using SolarLabCourseTask.Contracts.Users;
+using AutoMapper;
+using SolarLabCourseTask.Domain.Users.Entity;
 
 namespace SolarLabCourseTask.AppServices.Users.Services;
 
@@ -8,14 +10,17 @@ namespace SolarLabCourseTask.AppServices.Users.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
+    private readonly IMapper _mapper;
 
     /// <summary>
     /// Инициализирует экземпляр <see cref="UserService"/>.
     /// </summary>
     /// <param name="userRepository">Репозиторий для работы с пользователями.</param>
-    public UserService(IUserRepository userRepository)
+    /// <param name="mapper">Маппер</param>
+    public UserService(IUserRepository userRepository, IMapper mapper)
     {
         _userRepository = userRepository;
+        _mapper = mapper;
     }
 
     /// <inheritdoc />
@@ -23,4 +28,12 @@ public class UserService : IUserService
     {
         return _userRepository.GetAll(cancellationToken);
     }
+
+    public async Task<Guid> AddAsync(CreateUserRequest model, CancellationToken cancellationToken)
+    {
+        var entity = _mapper.Map<User>(model);
+        await _userRepository.AddAsync(entity, cancellationToken);
+        return entity.Id;
+    }
+    
 }

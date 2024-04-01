@@ -36,6 +36,11 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity: class
         return await DbSet.FindAsync(id);
     }
 
+    public ValueTask<EntityEntry<TEntity>> AddAsync(TEntity model, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
     ///<inheritdoc />
     public ValueTask<EntityEntry<TEntity>> AddAsync(TEntity model)
     {

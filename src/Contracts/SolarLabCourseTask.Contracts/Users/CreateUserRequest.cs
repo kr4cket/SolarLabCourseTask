@@ -1,20 +1,10 @@
 ﻿namespace SolarLabCourseTask.Contracts.Users;
 
 /// <summary>
-/// Пользователь.
+///  Запрос на создание пользователя.
 /// </summary>
-public class UserDto
+public class CreateUserRequest
 {
-    /// <summary>
-    /// Идентификатор записи.
-    /// </summary>
-    public Guid Id { get; set; }
-    
-    /// <summary>
-    /// Имя и фамилия пользователя.
-    /// </summary>
-    public string FullName { get; set; }
-    
     /// <summary>
     /// Имя пользовтеля.
     /// </summary>

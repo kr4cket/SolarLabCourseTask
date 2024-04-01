@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj": {}
+    "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj": {
+    "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj",
         "projectName": "SolarLabCourseTask.Infrastructure",
-        "projectPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\kores\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kores\\source\\repos\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\SolarLabCourseTask.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danie\\RiderProjects\\SolarLabCourseTask\\src\\Infrastructure\\SolarLabCourseTask.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Visual Studio Community\\VS Community Common\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kores\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +40,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0-preview.2.24128.4, )"
@@ -62,7 +66,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.0-preview.1, )"
+              "version": "[9.0.0-preview.2, )"
             }
           },
           "imports": [
@@ -81,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
