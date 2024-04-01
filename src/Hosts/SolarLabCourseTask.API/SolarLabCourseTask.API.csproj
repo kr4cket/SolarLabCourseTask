@@ -46,6 +46,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Application\SolarLabCourseTask.AppServices\SolarLabCourseTask.AppServices.csproj" />
     <ProjectReference Include="..\..\Contracts\SolarLabCourseTask.Contracts\SolarLabCourseTask.Contracts.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SolarLabCourseTask.ComponentRegistrar\SolarLabCourseTask.ComponentRegistrar.csproj" />
     <ProjectReference Include="..\..\Infrastructure\SolarLabCourseTask.DataAccess\SolarLabCourseTask.DataAccess.csproj" />
   </ItemGroup>
 

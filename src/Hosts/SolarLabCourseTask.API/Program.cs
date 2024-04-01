@@ -6,11 +6,9 @@ using SolarLabCourseTask.Contracts.Users;
 using SolarLabCourseTask.DataAccess;
 using SolarLabCourseTask.DataAccess.User.Repository;
 using SolarLabCourseTask.Infrastructure.Repository;
+using SolarLabCourseTask.ComponentRegistrar;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -22,6 +20,8 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(Path.Combine(AppContext.BaseDirectory,
         $"{typeof(UserDto).Assembly.GetName().Name}.xml")));
 });
+
+builder.Services.AddServices();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
