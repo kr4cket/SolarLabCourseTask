@@ -14,4 +14,8 @@ public interface IUserService
     Task<IEnumerable<UserDto>> GetUsersAsync(CancellationToken cancellationToken);
     
     Task<Guid> AddAsync(CreateUserRequest model, CancellationToken cancellationToken);
+    
+    Task UpdateAsync(UserDto model, CancellationToken cancellationToken);
+
+    Task DeleteAsync(Guid id, CancellationToken cancellationToken);
 }

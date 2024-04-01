@@ -35,22 +35,16 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity: class
 
         return await DbSet.FindAsync(id);
     }
-
+    
+    ///<inheritdoc />
     public ValueTask<EntityEntry<TEntity>> AddAsync(TEntity model, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
-    }
-
-    ///<inheritdoc />
-    public ValueTask<EntityEntry<TEntity>> AddAsync(TEntity model)
-    {
         ArgumentNullException.ThrowIfNull(model);
-        
-        var entity = DbSet.AddAsync(model);
-        DbContext.SaveChangesAsync();
+        var entity = DbSet.AddAsync(model, cancellationToken);
+        DbContext.SaveChangesAsync(cancellationToken);
         return entity;
     }
-
+    
     ///<inheritdoc />
     public Task UpdateAsync(TEntity model)
     {        
@@ -61,11 +55,11 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity: class
     }
 
     ///<inheritdoc />
-    public Task DeleteAsync(TEntity model)
+    public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
     {
-        ArgumentNullException.ThrowIfNull(model);
-        
-        DbSet.Remove(model);
-        return DbContext.SaveChangesAsync();
+        var entity =  GetByIdAsync(id).Result;
+        ArgumentNullException.ThrowIfNull(entity);
+        DbSet.Remove(entity);
+        await DbContext.SaveChangesAsync(cancellationToken);
     }
 }

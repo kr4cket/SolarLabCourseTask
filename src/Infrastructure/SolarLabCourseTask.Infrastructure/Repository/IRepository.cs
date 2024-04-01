@@ -41,6 +41,6 @@ public interface IRepository<TEntity> where TEntity: class
     /// <summary>
     /// Удаляет элемент сущности
     /// </summary>
-    /// <param name="model">Сущность</param>
-    Task DeleteAsync(TEntity model);
+    /// <param name="id">Идентификатор пользователя</param>
+    Task DeleteAsync(Guid id, CancellationToken cancellationToken);
 }

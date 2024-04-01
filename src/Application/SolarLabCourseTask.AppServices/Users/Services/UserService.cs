@@ -35,5 +35,14 @@ public class UserService : IUserService
         await _userRepository.AddAsync(entity, cancellationToken);
         return entity.Id;
     }
-    
+
+    public async Task UpdateAsync(UserDto model, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
+    {
+        await _userRepository.DeleteAsync(id, cancellationToken);
+    }
 }

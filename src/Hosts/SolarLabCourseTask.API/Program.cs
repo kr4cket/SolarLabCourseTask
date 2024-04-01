@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using SolarLabCourseTask.API.Controllers;
 using SolarLabCourseTask.AppServices.Users.Repositories;
+using SolarLabCourseTask.AppServices.Users.Services;
+using SolarLabCourseTask.AppServices.Users.Services.Interfaces;
 using SolarLabCourseTask.Contracts.Users;
 using SolarLabCourseTask.DataAccess;
 using SolarLabCourseTask.DataAccess.User.Repository;
@@ -24,6 +26,8 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddServices();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 

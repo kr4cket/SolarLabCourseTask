@@ -63,23 +63,24 @@ namespace SolarLabCourseTask.API.Controllers
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> DeleteUser(string id, CancellationToken cancellationToken)
+        public async Task<IActionResult> DeleteUser(Guid id, CancellationToken cancellationToken)
         {
+            await _userService.DeleteAsync(id, cancellationToken);
             return NoContent();
         }
 
         /// <summary>
         /// Создает пользователя.
         /// </summary>
-        /// <param name="model">Данные пользователя</param>
+        /// <param name="request">Данные пользователя</param>
         /// <param name="cancellationToken">Токен отмены операции.</param>
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> CreateUser(CreateUserRequest model, CancellationToken cancellationToken)
+        public async Task<IActionResult> CreateUser(CreateUserRequest request, CancellationToken cancellationToken)
         {
-            var uri = await _userService.AddAsync(model, cancellationToken);
-            return Created();
+            var result = await _userService.AddAsync(request, cancellationToken);
+            return CreatedAtAction(nameof(CreateUser), new { result });
         }
 
         /// <summary>
