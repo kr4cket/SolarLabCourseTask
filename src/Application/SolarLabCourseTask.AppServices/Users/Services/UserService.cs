@@ -24,9 +24,9 @@ public class UserService : IUserService
     }
 
     /// <inheritdoc />
-    public Task<IEnumerable<UserDto>> GetUsersAsync(CancellationToken cancellationToken)
+    public Task<ResultWithPagination<UserDto>> GetUsersAsync(GetAllUsersRequest request, CancellationToken cancellationToken)
     {
-        return _userRepository.GetAll(cancellationToken);
+        return _userRepository.GetAll(request, cancellationToken);
     }
 
     public async Task<Guid> AddAsync(CreateUserRequest model, CancellationToken cancellationToken)

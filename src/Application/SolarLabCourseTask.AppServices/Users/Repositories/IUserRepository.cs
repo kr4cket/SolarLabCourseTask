@@ -8,9 +8,10 @@ public interface IUserRepository
     /// <summary>
     /// Получение всех пользователей.
     /// </summary>
+    /// <param name="request">Параметры запроса</param>
     /// <param name="cancellationToken">Токен</param>
     /// <returns>Список пользователей</returns>
-    Task<IEnumerable<UserDto>> GetAll(CancellationToken cancellationToken);
+    Task<ResultWithPagination<UserDto>> GetAll(GetAllUsersRequest request, CancellationToken cancellationToken);
     
     /// <summary>
     /// Создание пользователя.

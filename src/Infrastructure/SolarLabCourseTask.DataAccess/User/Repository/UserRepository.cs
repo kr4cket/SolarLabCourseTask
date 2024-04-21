@@ -18,9 +18,25 @@ public class UserRepository : IUserRepository
         _mapper = mapper;
     }
     /// <inheritdoc />
-    public async Task<IEnumerable<UserDto>> GetAll(CancellationToken cancellationToken)
+    public async Task<ResultWithPagination<UserDto>> GetAll(GetAllUsersRequest request, CancellationToken cancellationToken)
     {
-        return await _repository.GetAll().ProjectTo<UserDto>(_mapper.ConfigurationProvider).ToListAsync(cancellationToken);
+        var result = new ResultWithPagination<UserDto>();
+        
+        var query = _repository.GetAll();
+
+        var elementsCount = await query.CountAsync(cancellationToken);
+        result.AvailablePages = elementsCount / request.Batchsize;
+
+        var paginationQuery = await query
+            .OrderBy(user => user.Id)
+            .Skip(request.Batchsize * (request.PageNumber - 1))
+            .Take(request.Batchsize)
+            .ProjectTo<UserDto>(_mapper.ConfigurationProvider)
+            .ToArrayAsync(cancellationToken);
+
+        result.Result = paginationQuery;
+
+        return result;
     }
 
     /// <inheritdoc/>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarLabCourseTask.AppServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ace9940060d75b6c141bcaaee08cdef9cfd001fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fe3e34108784bea55bc2a37499278669c201d99")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarLabCourseTask.AppServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarLabCourseTask.AppServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

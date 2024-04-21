@@ -5,6 +5,9 @@ using SolarLabCourseTask.Contracts.Users;
 
 namespace SolarLabCourseTask.API.Controllers
 {
+    /// <summary>
+    /// Контроллер для работы с пользователями
+    /// </summary>
     [ApiController]
     [Route("/users")]
     public class UserController : ControllerBase
@@ -29,9 +32,9 @@ namespace SolarLabCourseTask.API.Controllers
         [ProducesResponseType(typeof(IEnumerable<UserDto>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> GetAllUsers(CancellationToken cancellationToken)
+        public async Task<IActionResult> GetAllUsers([FromQuery] GetAllUsersRequest request, CancellationToken cancellationToken)
         {
-            var result = await _userService.GetUsersAsync(cancellationToken);
+            var result = await _userService.GetUsersAsync(request, cancellationToken);
 
             return Ok(result);
         }
